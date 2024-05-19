@@ -2,44 +2,81 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
-    <h1>Hellow World!</h1>
-    <h1>Heading 1</h1>
-    <h2>Headng 2</h2>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit praesentium
-      sapiente provident totam? Sit, fuga minus ad nam fugiat ratione veritatis
-      atque aliquid. Perspiciatis facilis quae animi tempora molestiae ea.
-    </p>
+  <!-- <style>
+    #dropdown-products {
+      display: none;
+    }
 
-    <!-- new brance element  -->
-    <h1>Hellow World!</h1>
-    <h1>Heading 1</h1>
-    <h2>Headng 2</h2>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit praesentium
-      sapiente provident totam? Sit, fuga minus ad nam fugiat ratione veritatis
-      atque aliquid. Perspiciatis facilis quae animi tempora molestiae ea.
-    </p>
-    <!-- add more code  -->
-    <h1>Do You know About Our Institution?</h1>
-    <a href="#">Show Here</a> <br /><br />
-    Demo
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum minima
-      dolor nulla, expedita beatae recusandae itaque. Soluta facere quasi
-      eveniet provident, dicta non facilis est porro cupiditate, sed
-      repellendus, culpa autem officiis natus veniam? Quam rerum, veniam tempora
-      magnam, maiores atque excepturi unde cumque, vitae cum non? Et non porro
-      iure recusandae repudiandae quis, quidem pariatur eveniet! Architecto
-      repellendus voluptates dolores! Adipisci molestias quos molestiae,
-      explicabo nostrum nemo numquam amet illum provident obcaecati in ipsum
-      consequuntur aut! Doloremque atque repudiandae voluptatem, dolores minus
-      animi? Soluta commodi error sequi reiciendis impedit iste dolor,
-      blanditiis eum. Temporibus eaque ipsum cupiditate illo consequatur!
-    </p>
+    #menu-products:hover #dropdown-products {
+      display: block;
+    }
+  </style> -->
+  <body>
+    <div>
+      <!-- <div>
+      <h1>Hellow World!</h1>
+      <h1>Heading 1</h1>
+      <h2>Headng 2</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+        praesentium sapiente provident totam? Sit, fuga minus ad nam fugiat
+        ratione veritatis atque aliquid. Perspiciatis facilis quae animi tempora
+        molestiae ea.
+      </p>
+    </div> -->
+
+      <!-- new brance element  -->
+      <!-- <div>
+      <h1>Hellow World!</h1>
+      <h1>Heading 1</h1>
+      <h2>Headng 2</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+        praesentium sapiente provident totam? Sit, fuga minus ad nam fugiat
+        ratione veritatis atque aliquid. Perspiciatis facilis quae animi tempora
+        molestiae ea.
+      </p>
+    </div> -->
+      <!-- add more code  -->
+      <!-- <div>
+      <h1>Do You know About Our Institution?</h1>
+      <a href="#">Show Here</a> <br /><br />
+      Demo
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum minima
+        dolor nulla, expedita beatae recusandae itaque. Soluta facere quasi
+        eveniet provident, dicta non facilis est porro cupiditate, sed
+        repellendus, culpa autem officiis natus veniam? Quam rerum, veniam
+        tempora magnam, maiores atque excepturi unde cumque, vitae cum non? Et
+        non porro iure recusandae repudiandae quis, quidem pariatur eveniet!
+        Architecto repellendus voluptates dolores! Adipisci molestias quos
+        molestiae, explicabo nostrum nemo numquam amet illum provident obcaecati
+        in ipsum consequuntur aut! Doloremque atque repudiandae voluptatem,
+        dolores minus animi? Soluta commodi error sequi reiciendis impedit iste
+        dolor, blanditiis eum. Temporibus eaque ipsum cupiditate illo
+        consequatur!
+      </p>
+    </div> -->
+    </div>
+    <h1 class="text-3xl font-bold text-center p-5">Hello world!</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li id="menu-products hidden">
+          <a href="#">Products</a>
+          <ul id="dropdown-products block">
+            <li><a href="#">Product 1</a></li>
+            <li><a href="#">Product 2</a></li>
+            <li><a href="#">Product 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </nav>
   </body>
 </html>
