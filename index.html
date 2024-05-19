@@ -7,15 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <!-- <style>
-    #dropdown-products {
-      display: none;
-    }
-
-    #menu-products:hover #dropdown-products {
-      display: block;
-    }
-  </style> -->
   <body>
     <div>
       <!-- <div>
@@ -64,19 +55,13 @@
     </div> -->
     </div>
     <h1 class="text-3xl font-bold text-center p-5">Hello world!</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li id="menu-products hidden">
-          <a href="#">Products</a>
-          <ul id="dropdown-products block">
-            <li><a href="#">Product 1</a></li>
-            <li><a href="#">Product 2</a></li>
-            <li><a href="#">Product 3</a></li>
-          </ul>
-        </li>
-        <li><a href="#">About Us</a></li>
-      </ul>
-    </nav>
+    <button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 rounded-full px-3 py-1">
+      Save changes
+    </button>
+    <div class="grid grid-rows-3 grid-flow-col gap-4">
+      <div class="row-start-3 row-span-2  bg-fuchsia-600">01</div>
+      <div class="row-end-3 row-span-2 bg-green-600">02</div>
+      <div class="row-start-1 row-end-1 bg-violet-600">03</div>
+    </div>
   </body>
 </html>
