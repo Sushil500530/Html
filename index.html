@@ -82,7 +82,8 @@ canvas{
       </button>
     </div>
 
-    <div class="group w-44 mx-auto bg-blue-50 shadow-xl relative cursor-pointer text-center py-2 rounded"
+    <div class="flex items-center justify-center gap-4 flex-col md:flex-row lg:flex-row my-5">
+      <div class="group w-44 mx-auto bg-blue-50 shadow-xl relative cursor-pointer text-center py-2 rounded"
     >
       hover
       <div
@@ -106,6 +107,19 @@ canvas{
           </button>
         </div>
       </div>
+    </div>
+    <div class="group relative bg-gray-200 text-black px-3 py-1 rounded-full w-64 mx-auto mt-2 cursor-pointer">
+      show here
+      <div class="absolute hidden group-hover:block mt-2 bg-blue-50 shadow-xl p-4 transition-all duration-200">
+      <h1>Do you know me</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, totam. Explicabo eius dolorum corporis quae commodi ad accusamus veniam enim corrupti assumenda beatae, laboriosam nulla in optio excepturi eveniet fugiat.</p>
+      <button
+      class="bg-purple-600 hover:bg-purple-700 active:bg-violet-700 focus:outline-none rounded-full px-3 py-1 text-white"
+    >
+      Save changes
+    </button>
+      </div>
+    </div>
     </div>
    
     <!-- <div class="grid grid-rows-3 grid-flow-col gap-4">
@@ -189,7 +203,20 @@ canvas{
     </svg>  -->
   
     <!-- <canvas></canvas> -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,128L60,122.7C120,117,240,107,360,122.7C480,139,600,181,720,218.7C840,256,960,288,1080,277.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,128L60,122.7C120,117,240,107,360,122.7C480,139,600,181,720,218.7C840,256,960,288,1080,277.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg> -->
+    <button type="button" class="hs-collapse-toggle py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" id="hs-basic-collapse" data-hs-collapse="#hs-basic-collapse-heading">
+      Collapse
+      <svg class="hs-collapse-open:rotate-180 flex-shrink-0 size-4 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m6 9 6 6 6-6"></path>
+      </svg>
+    </button>
+    <div id="hs-basic-collapse-heading" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-collapse">
+      <div class="mt-5">
+        <p class="text-gray-500">
+          This is a collapse body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+        </p>
+      </div>
+    </div>
   </body>
   <!-- <script src="./index.js"></script> -->
 </html>
